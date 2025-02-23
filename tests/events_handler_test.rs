@@ -222,10 +222,7 @@ async fn test_handle_events_21904546() {
         Decimal::from_str("-18601.32753551").unwrap()
     );
 
-    assert_eq!(
-        swap_details.amount1_raw,
-        18602732366_i64.into()
-    );
+    assert_eq!(swap_details.amount1_raw, 18602732366_i64.into());
     // 18602732366 / 1_000_000 => 18602.732366
     assert_eq!(
         swap_details.amount1_as_decimal_num.round_dp(8),

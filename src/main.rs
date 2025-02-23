@@ -5,10 +5,7 @@ use uniswap_dai_usd_monitor::{setup_web3, BLOCK_CONFIRMATIONS};
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
-    env_logger::Builder::from_env(
-        env_logger::Env::default().default_filter_or("debug"),
-    )
-    .init();
+    env_logger::Builder::from_env(env_logger::Env::default().default_filter_or("debug")).init();
     log::info!("🚀 App launched. Fetching blocks...");
 
     let web3 = setup_web3().await?;
