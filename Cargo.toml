@@ -1,0 +1,24 @@
+[package]
+name = "uniswap-dai-usd-monitor"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "generate_fixtures"
+path = "scripts/generate_fixtures.rs"
+
+[dependencies]
+anyhow = "1.0"
+futures = "0.3.14"
+tokio = "1.21.2"
+hex = "0.4.3"
+web3 = "0.19.0"
+dotenv = "0.15"
+serde_json = "1.0.138"
+rust_decimal = "1.36.0"
+mockall = "0.13.1"
+async-trait = "0.1.86"
+log = "0.4"
+env_logger = "0.11.5"
+
+
